@@ -12,7 +12,7 @@ import SectionTitle from "../../../Components/sectionTitle";
 
 const Category = () => {
   return (
-    <section className="pb-10 px-16">
+    <section className="pb-14 max-w-screen-xl mx-auto">
       <SectionTitle subtitle="From 11:00am to 10:00pm" title="ORDER ONLINE"></SectionTitle>
 
       <Swiper
