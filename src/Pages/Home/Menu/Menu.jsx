@@ -29,7 +29,7 @@ const Menu = () => {
       </div>
 
       <div className="flex justify-center">
-        <Button btnText={'View Full Menu'}></Button>
+        <Button >View Full Menu</Button>
       </div>
     </section>
   );

@@ -5,6 +5,7 @@ import Category from "../Category/Category";
 import LatestNews from "../LatestNews/LatestNews";
 import Menu from "../Menu/Menu";
 import Recommends from "../Recommend/Recommends";
+import Testimonial from "../Testimonial/Testimonial";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <CallUs />
             <Recommends />
             <LatestNews />
+            <Testimonial />
         </>
     );
 };

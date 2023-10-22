@@ -2,6 +2,7 @@ import Button from '../../../Components/Button';
 import bgImg from '../../../assets/home/banner.jpg'
 
 const Bistroboss = () => {
+ 
   return (
     <section
       className="hero min-h-[700px] my-16 bg-fixed"
@@ -18,7 +19,7 @@ const Bistroboss = () => {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore rem ratione temporibus laborum quibusdam magnam. Voluptatem exercitationem molestiae harum? Consequuntur, reiciendis. Iste quas nisi perspiciatis accusamus dolores.
           </p>
           
-          <Button btnText={'Get Started'} btnStyle={'btn-primary'}></Button>
+          <Button >Get Started</Button>
         </div>
       </div>
     </section>
