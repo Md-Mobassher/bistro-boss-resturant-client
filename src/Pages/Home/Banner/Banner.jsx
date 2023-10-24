@@ -1,4 +1,3 @@
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
@@ -11,7 +10,7 @@ import img6 from '../../../assets/home/06.png'
 
 const Banner = () => {
     return (
-        <Carousel>
+        <Carousel autoplay>
         <div>
             <img src={img1}/>
         </div>

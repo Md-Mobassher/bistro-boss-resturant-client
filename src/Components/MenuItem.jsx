@@ -1,6 +1,6 @@
 
 
-const MenuItems = ({item}) => {
+const MenuItem = ({item}) => {
     const {name, image, recipe, price } = item
 
     return (
@@ -15,4 +15,4 @@ const MenuItems = ({item}) => {
     );
 };
 
-export default MenuItems;
+export default MenuItem;

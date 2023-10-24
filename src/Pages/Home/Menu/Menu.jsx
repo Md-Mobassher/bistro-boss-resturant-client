@@ -1,37 +1,23 @@
-import { useEffect, useState } from "react";
+import useMenu from "../../../hooks/useMenu";
+import MenuItems from "../../../Components/MenuItems";
 import SectionTitle from "../../../Components/sectionTitle";
-import MenuItem from "../../../Components/MenuItem";
-import Button from "../../../Components/Button";
 
 const Menu = () => {
-  const [menu, setMenu] = useState([]);
+  const {menu, loading} = useMenu(); 
 
-  useEffect(() => {
-    fetch("menu.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const popularItems = data.filter((item) => item.category === "popular");
-        setMenu(popularItems);
-      });
-  }, []);
+  const popularItems = menu.filter((item) => item.category === "popular");
+  console.log(menu, popularItems)
 
   return (
-    <section className="mb-20  max-w-screen-xl mx-auto">
+    <>
       <SectionTitle
-        subtitle="Check it out"
-        title="FROM OUR MENU"
+        title={"FROM OUR MENU"}
+        subtitle={"Check it out"}
       ></SectionTitle>
-
-      <div className=" grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 my-5 gap-x-16">
-        {menu.map((item) => (
-          <MenuItem key={item._id} item={item}></MenuItem>
-        ))}
-      </div>
-
-      <div className="flex justify-center">
-        <Button >View Full Menu</Button>
-      </div>
-    </section>
+     {
+      loading ? <h2 className="text-xl text-center">Loading</h2> :  <MenuItems items={popularItems} btnText={"View Full Menu"}></MenuItems>
+     }
+    </>
   );
 };
 

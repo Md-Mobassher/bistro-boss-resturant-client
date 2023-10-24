@@ -12,7 +12,7 @@ const Footer = () => {
         <div className=" max-w-screen-xl mx-auto footer py-10  text-white">
           <nav>
             <header className="font-semibold text-2xl mb-4">
-              Bistro Boos Resturant
+              Raiyan Resturant
             </header>
             <a className="link link-hover ">
               24/A - Tograihat, Rajarhat, Kurigram
