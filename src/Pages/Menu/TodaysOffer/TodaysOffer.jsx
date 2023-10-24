@@ -3,7 +3,7 @@ import SectionTitle from "../../../Components/sectionTitle";
 import useMenu from "../../../hooks/useMenu";
 
 const TodaysOffer = () => {
-  const [menu] = useMenu();
+  const { loading, menu } = useMenu();
   const todaysOffer = menu.filter((item) => item.category === "offered");
 
   return (
@@ -12,10 +12,15 @@ const TodaysOffer = () => {
         title={"TODAY'S OFFER"}
         subtitle={"Don't miss"}
       ></SectionTitle>
-      <MenuItems
-        items={todaysOffer}
-        btnText={"ORDER YOUR FAVOURITE FOOD"}
-      ></MenuItems>
+
+      {loading ? (
+        <h2>Loading</h2>
+      ) : (
+        <MenuItems
+          items={todaysOffer}
+          btnText={"ORDER YOUR FAVOURITE FOOD"}
+        ></MenuItems>
+      )}
     </>
   );
 };

@@ -5,7 +5,7 @@ import pizzaImg from "../../../assets/menu/pizza-bg.jpg";
 import useMenu from "../../../hooks/useMenu";
 
 const Pizza = () => {
-  const [menu] = useMenu();
+  const { loading, menu } = useMenu();
   const pizzas = menu.filter((item) => item.category === "pizza");
 
   return (
@@ -17,11 +17,15 @@ const Pizza = () => {
           "Indulge in our heavenly selection of artisanal desserts, meticulously crafted to tantalize your taste buds. From our signature velvety cheesecakes to our decadent chocolate delicacies, each dessert at Raiyan promises a blissful symphony of flavors, leaving you craving for more."
         }
       ></Cover>
-      
-      <MenuItems
-        items={pizzas}
-        btnText={"ORDER YOUR FAVOURITE FOOD"}
-      ></MenuItems>
+
+      {loading ? (
+        <h2>Loading</h2>
+      ) : (
+        <MenuItems
+          items={pizzas}
+          btnText={"ORDER YOUR FAVOURITE FOOD"}
+        ></MenuItems>
+      )}
     </>
   );
 };
