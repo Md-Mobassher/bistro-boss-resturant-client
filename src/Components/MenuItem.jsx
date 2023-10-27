@@ -1,11 +1,11 @@
 
 
-const MenuItem = ({item}) => {
+const MenuItem = ({item , style}) => {
     const {name, image, recipe, price } = item
 
     return (
-        <div className="flex gap-x-3 ">
-            <img className="w-[100px]" style={{borderRadius: "0 200px 200px 200px"}} src={image} alt={name} />
+        <div style={style} className="flex gap-x-3 mt-5">
+            <img className="lg:w-[150px] lg:h-[120px] w-[100px] h-[100px]" style={{borderRadius: "0 50px 50px 50px"}} src={image} alt={name} />
             <div>
                 <h4 className="uppercase font-semibold text-lg text-yellow-500">{name}-----------</h4>
                 <p>{recipe}</p>

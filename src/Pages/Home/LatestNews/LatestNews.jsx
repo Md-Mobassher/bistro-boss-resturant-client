@@ -1,5 +1,5 @@
 import Button from "../../../Components/Button";
-import SectionTitle from "../../../Components/sectionTitle";
+import SectionTitle from "../../../Components/SectionTitle";
 import newsImg from "../../../assets/home/featured.jpg";
 
 const LatestNews = () => {
