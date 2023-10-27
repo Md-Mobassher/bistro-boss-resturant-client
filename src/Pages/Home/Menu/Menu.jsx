@@ -1,6 +1,7 @@
 import useMenu from "../../../hooks/useMenu";
 import MenuItems from "../../../Components/MenuItems";
-import SectionTitle from "../../../Components/sectionTitle";
+import SectionTitle from "../../../Components/SectionTitle";
+
 
 const Menu = () => {
   const {menu, loading} = useMenu(); 

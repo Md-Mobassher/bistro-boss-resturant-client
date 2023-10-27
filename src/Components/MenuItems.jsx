@@ -4,7 +4,7 @@ import MenuItems from "./MenuItem";
 
 const MenuSection = ({ items, btnText}) => {
   return (
-    <section className="mb-20 mt-10 max-w-screen-xl mx-auto">
+    <section className="mb-20 lg:px-20 px-5">
 
       <div className=" grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 my-5 gap-x-16">
         {items.map((item) => (

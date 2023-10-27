@@ -4,6 +4,7 @@ import Cover from "../../../Components/Cover";
 import shopbgImg from "../../../assets/shop/banner2.jpg";
 import ShopItems from "../ShopItems";
 
+
 const Shop = () => {
   return (
     <>

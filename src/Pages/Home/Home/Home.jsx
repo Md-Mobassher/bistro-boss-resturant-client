@@ -12,7 +12,7 @@ import RaiyanRestaurant from "../RaiyanRestaurant/RaiyanRestaurant";
 
 const Home = () => {
     return (
-        <>
+        <div >
         <Helmet>
             <title>Raiyan Restaurant | Home</title>
         </Helmet>
@@ -24,7 +24,7 @@ const Home = () => {
             <Recommends />
             <LatestNews />
             <Testimonial />
-        </>
+        </div>
     );
 };
 

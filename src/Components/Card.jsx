@@ -8,7 +8,7 @@ const Card = ({ title, description }) => {
   }
   
   return (
-    <div className="card  rounded-lg  bg-[#F3F3F3] mb-20">
+    <div className="card  rounded-lg  bg-[#F3F3F3]">
       <figure>
         <img
           src={img}

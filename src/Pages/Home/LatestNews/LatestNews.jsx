@@ -15,14 +15,14 @@ const LatestNews = () => {
     >
       <div className="hero-overlay bg-opacity-70 bg-[#151515B2]"></div>
 
-      <div className="max-w-screen-xl mx-auto">
+      <div className="lg:px-20 mt-10">
         <SectionTitle
           subtitle={"Check it out"}
           title={"FROM OUR MENU"}
         ></SectionTitle>
-        <div className="flex gap-20 pb-20  justify-center items-center">
-          <img className="w-1/2" src={newsImg} alt="" />
-          <div>
+        <div className="lg:flex  gap-20 pb-20  justify-center items-center px-5">
+          <img className="lg:w-1/2 " src={newsImg} alt="" />
+          <div className="mt-8 ">
             <h3 className="text-xl font-semibold">March 20, 2023</h3>
             <h3 className="text-lg font-semibold my-2">
               WHERE CAN I GET SOME?

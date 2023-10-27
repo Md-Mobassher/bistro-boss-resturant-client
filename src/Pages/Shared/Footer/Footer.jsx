@@ -8,8 +8,8 @@ const Footer = () => {
     >
       <div className="hero-overlay bg-opacity-70 bg-[#151515B2]"></div>
 
-      <div className="lg:w-[1280px]">
-        <div className=" max-w-screen-xl mx-auto footer py-10  text-white">
+      <div className="lg:w-[1180px] px-5">
+        <div className="  footer py-10  text-white">
           <nav>
             <header className="font-semibold text-2xl mb-4">
               Raiyan Resturant

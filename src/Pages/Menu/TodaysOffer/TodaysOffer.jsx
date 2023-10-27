@@ -7,7 +7,7 @@ const TodaysOffer = () => {
   const todaysOffer = menu.filter((item) => item.category === "offered");
 
   return (
-    <>
+    <div className="mt-10">
       <SectionTitle
         title={"TODAY'S OFFER"}
         subtitle={"Don't miss"}
@@ -21,7 +21,7 @@ const TodaysOffer = () => {
           btnText={"ORDER YOUR FAVOURITE FOOD"}
         ></MenuItems>
       )}
-    </>
+    </div>
   );
 };
 
